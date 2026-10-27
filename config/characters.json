@@ -1,0 +1,87 @@
+[
+  {
+    "id": "nani-kamala",
+    "name": "Nani Kamala",
+    "kid_name": "Nani",
+    "heritage": "South Indian",
+    "look": "a cheerful South Indian grandmother in her late sixties, silver hair in a neat bun, round gold-rimmed glasses, small bindi, wearing a bright cotton saree in teal and mustard with a cardigan, warm brown skin, big kind smile",
+    "personality": "cheeky and adventurous; drives her little red convertible a bit too proudly, loves stargazing, never loses an argument, says 'Shall we find out?'",
+    "favourite_things": [
+      "stargazing",
+      "road trips",
+      "plants",
+      "puzzles"
+    ],
+    "voice": "en-IN-NeerjaNeural",
+    "rate": "-8%",
+    "pitch": "-6Hz"
+  },
+  {
+    "id": "abuela-rosa",
+    "name": "Abuela Rosa",
+    "kid_name": "Abuela",
+    "heritage": "Mexican",
+    "look": "a lively Mexican grandmother in her late sixties, short curly salt-and-pepper hair, red-framed glasses, light-brown skin, wearing denim overalls over a flowered blouse, a tool belt or apron depending on the scene",
+    "personality": "a mischievous tinkerer who fixes bikes, builds gadgets and plays harmless pranks on her friends, says 'Let's build it!'",
+    "favourite_things": [
+      "fixing things",
+      "bicycles",
+      "cooking",
+      "music"
+    ],
+    "voice": "en-US-AvaNeural",
+    "rate": "-6%",
+    "pitch": "-8Hz"
+  },
+  {
+    "id": "grandma-mae",
+    "name": "Grandma Mae",
+    "kid_name": "Grandma Mae",
+    "heritage": "African American",
+    "look": "a joyful African American grandmother in her early seventies, short natural grey curls, dark brown skin, pearl earrings, wearing a sunny yellow cardigan over a patterned dress, a garden hat outdoors",
+    "personality": "a sassy baker and gardener with a big laugh who secretly sneaks extra cookies, says 'Well, isn't that something!'",
+    "favourite_things": [
+      "baking",
+      "gardening",
+      "birds",
+      "storytelling"
+    ],
+    "voice": "en-US-JennyNeural",
+    "rate": "-10%",
+    "pitch": "-10Hz"
+  },
+  {
+    "id": "halmoni-soonja",
+    "name": "Halmoni Soon-ja",
+    "kid_name": "Halmoni",
+    "heritage": "Korean",
+    "look": "an energetic Korean grandmother in her late sixties, short permed grey hair, light skin, wearing a lavender fleece jacket, hiking pants and a sun visor, binoculars around her neck when outdoors",
+    "personality": "a fearless, competitive hiker and camper who out-walks teenagers and protects every creature she meets, says 'Look closely!'",
+    "favourite_things": [
+      "hiking",
+      "camping",
+      "insects",
+      "rivers"
+    ],
+    "voice": "en-US-EmmaNeural",
+    "rate": "-6%",
+    "pitch": "-6Hz"
+  },
+  {
+    "id": "nonna-lucia",
+    "name": "Nonna Lucia",
+    "kid_name": "Nonna",
+    "heritage": "Italian",
+    "look": "a warm Italian grandmother in her early seventies, wavy white hair to her shoulders, olive skin, green eyes, wearing a cozy olive-green knit sweater and a silver necklace, an apron when cooking",
+    "personality": "a dramatic, playful music lover who dances anywhere, spoils animals and scolds litterbugs, says 'Che bello!'",
+    "favourite_things": [
+      "music",
+      "animals",
+      "dancing",
+      "painting"
+    ],
+    "voice": "en-GB-SoniaNeural",
+    "rate": "-8%",
+    "pitch": "-8Hz"
+  }
+]

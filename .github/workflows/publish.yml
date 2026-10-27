@@ -1,0 +1,42 @@
+name: Publish video
+on:
+  workflow_dispatch:
+    inputs:
+      id: { description: "Day or week id", required: true }
+      slot: { description: "Video number or weekly", required: true }
+      targets: { description: "both, youtube or instagram", required: false, default: "both" }
+      title: { description: "Edited title (optional)", required: false, default: "" }
+      caption: { description: "Edited Instagram caption (optional)", required: false, default: "" }
+permissions:
+  contents: write
+run-name: Publish ${{ inputs.id }} video ${{ inputs.slot }} to ${{ inputs.targets }}
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GH_TOKEN: ${{ github.token }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests Pillow
+      - name: Publish
+        env:
+          TITLE: ${{ inputs.title }}
+          CAPTION: ${{ inputs.caption }}
+        run: python -m pipeline.publish --id "${{ inputs.id }}" --slot "${{ inputs.slot }}" --targets "${{ inputs.targets }}" --title "$TITLE" --caption "$CAPTION"
+  app:
+    needs: publish
+    if: always()
+    uses: ./.github/workflows/deploy-app.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

@@ -1,0 +1,29 @@
+name: Set video status
+on:
+  workflow_dispatch:
+    inputs:
+      id: { required: true }
+      slot: { required: true }
+      status: { description: "rejected or review", required: true }
+permissions:
+  contents: write
+run-name: Mark ${{ inputs.id }} video ${{ inputs.slot }} as ${{ inputs.status }}
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests Pillow
+      - run: python -m pipeline.set_status --id "${{ inputs.id }}" --slot "${{ inputs.slot }}" --status "${{ inputs.status }}"
+  app:
+    needs: status
+    if: always()
+    uses: ./.github/workflows/deploy-app.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

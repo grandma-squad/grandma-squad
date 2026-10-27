@@ -1,0 +1,36 @@
+name: Daily videos
+on:
+  schedule:
+    - cron: "37 10 * * *"   # about 6:37 am Toronto (summer) / 5:37 am (winter)
+  workflow_dispatch:
+    inputs:
+      date: { description: "Day (YYYY-MM-DD, blank = today)", required: false, default: "" }
+permissions:
+  contents: write
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          pip install -q -r requirements.txt
+      - name: Make today's Shorts
+        run: python -m pipeline.generate_day --date "${{ inputs.date }}"
+  app:
+    needs: make
+    if: always()
+    uses: ./.github/workflows/deploy-app.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

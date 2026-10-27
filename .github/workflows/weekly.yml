@@ -1,0 +1,39 @@
+name: Weekend compilation
+on:
+  schedule:
+    - cron: "17 13 * * 0"   # Sunday morning Toronto
+  workflow_dispatch:
+    inputs:
+      include_unpublished: { description: "Also use videos not yet published (true/false)", required: false, default: "false" }
+permissions:
+  contents: write
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          pip install -q -r requirements.txt
+      - name: Build the week's video
+        run: |
+          EXTRA=""
+          if [ "${{ inputs.include_unpublished }}" = "true" ]; then EXTRA="--include-unpublished"; fi
+          python -m pipeline.weekly $EXTRA
+  app:
+    needs: weekly
+    if: always()
+    uses: ./.github/workflows/deploy-app.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

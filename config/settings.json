@@ -1,0 +1,88 @@
+{
+  "channel_name": "Grandma Squad",
+  "timezone": "America/Toronto",
+  "videos_per_day": 3,
+  "scenes_per_video": 5,
+  "audience": "curious people of all ages: families, adults, teens and kids watching together",
+  "gemini_text_model": "gemini-2.5-flash",
+  "gemini_image_model": "gemini-2.5-flash-image",
+  "youtube_category_id": "27",
+  "youtube_made_for_kids": false,
+  "youtube_privacy": "public",
+  "default_hashtags": [
+    "#GrandmaSquad",
+    "#FunFacts",
+    "#DidYouKnow",
+    "#Shorts"
+  ],
+  "activities": [
+    "driving her car to the beach (seatbelt on)",
+    "baking cookies in a sunny kitchen",
+    "planting tomatoes in the backyard garden",
+    "camping by a lake at dusk",
+    "fixing a bicycle in the garage (helmet nearby)",
+    "flying a kite in a windy park",
+    "shopping at a farmers' market",
+    "visiting a zoo",
+    "visiting an aquarium",
+    "walking in the rain with an umbrella and rubber boots",
+    "building a snowman in winter",
+    "having a picnic in the park",
+    "watching the stars through a telescope on a rooftop",
+    "feeding ducks at a pond",
+    "painting at an easel by a window",
+    "riding a city bus and looking out the window",
+    "riding a train through the countryside",
+    "fishing from a small wooden dock (life jacket on)",
+    "hiking a forest trail",
+    "doing a safe kitchen experiment with baking soda and vinegar",
+    "visiting the library",
+    "watering houseplants and talking to them",
+    "watching a thunderstorm safely from the porch",
+    "making a fruit salad",
+    "sitting on a park bench watching bees on flowers",
+    "doing yoga stretches on a mat in the living room",
+    "washing her car in the driveway",
+    "putting a bandage on a scraped teddy bear (pretend doctor)",
+    "riding a tricycle bike along a lakeside path (helmet on)",
+    "looking at a rainbow after the rain",
+    "sneaking extra cookies while pretending to diet",
+    "racing her grandson on a mobility scooter at a safe park",
+    "pranking her friend with a fake spider at a picnic",
+    "winning a chess game in the park against a cocky teenager",
+    "picking up litter on the beach",
+    "rescuing a turtle crossing the road (safely)",
+    "catching a phone scammer and teaching him a lesson",
+    "dancing at a street festival",
+    "doing a silly TikTok dance with her friends",
+    "escorting ducklings across a path"
+  ],
+  "topic_types": [
+    "surprising science",
+    "animals",
+    "space",
+    "human body",
+    "nature and weather",
+    "how things work",
+    "history oddity",
+    "saving the planet",
+    "staying safe (scams, roads, water, fire)",
+    "kindness and standing up for others",
+    "healthy habits",
+    "world cultures and food"
+  ],
+  "missions": {
+    "1": {
+      "name": "THINK",
+      "goal": "a surprising true fact or clever idea that makes viewers stop and think, delivered with a cheeky twist"
+    },
+    "2": {
+      "name": "LAUGH",
+      "goal": "a funny real-life moment: a harmless mischievous prank, a silly mix-up or grandma outsmarting someone, ending with a small lesson or fact"
+    },
+    "3": {
+      "name": "PROTECT",
+      "goal": "grandma protecting something: the planet, animals, a neighbour, her own health or a scam target; a practical tip viewers can use"
+    }
+  }
+}
