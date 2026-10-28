@@ -2,7 +2,7 @@
   "channel_name": "Grandma Squad",
   "timezone": "America/Toronto",
   "videos_per_day": 3,
-  "scenes_per_video": 5,
+  "scenes_per_video": 6,
   "audience": "people aged 55 and over (grandparents, retirees and their friends), spoken to as equals by a grandmother of their own generation",
   "gemini_text_model": "gemini-2.5-flash",
   "gemini_image_model": "gemini-2.5-flash-image",

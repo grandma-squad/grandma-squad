@@ -75,19 +75,25 @@ Today's video: {mission['name']} — {mission['goal']}.
 Do NOT repeat any of these recent titles or their topics: {recent_titles}
 
 Rules:
-- Exactly {n} scenes. EACH scene's narration is 2 full sentences, 15 to 24 words.
-  Total narration 80 to 110 words (about 40 seconds spoken). Short one-line scenes are NOT acceptable.
-- Scene 1 is a friendly hook. Scenes 2 to 4 are clear numbered steps, ONE action per scene, in order.
-  Scene 5 gives the benefits and the sign-off.
-  The last scene ends with a cheerful sign-off inviting viewers back tomorrow (vary the wording).
+- Exactly {n} scenes. EACH scene's narration is 2 full sentences, 14 to 22 words.
+  Total narration 95 to 125 words (about 45 seconds spoken). Short one-line scenes are NOT acceptable.
+- Every video follows this exact story, like a caring friend talking:
+  Scene 1, THE PROBLEM: she shares a common problem people our age have, in first person, honestly
+    (e.g. "My knees ache when I climb the stairs, my dear", "Some evenings I feel so tired and cold",
+    "I used to wake up three times every night").
+  Scenes 2 to 4, DO THIS: "So I do this..." then clear numbered steps, ONE action per scene, in order.
+  Scene 5, HOW IT HELPS: how this improved things for her and why it works, honestly and modestly.
+  Scene 6, TRY IT AND TELL ME: she asks the viewer to try it and tell her in the comments how they feel,
+    with warm, motherly, encouraging words (e.g. "Try it tomorrow morning, my dear, and tell me how your
+    knees feel. You deserve to feel good, and I'm proud of you for taking care of yourself."). Vary the wording.
 - Speak to fellow seniors as equals, never like talking to children. Use relatable life-after-60 moments
   (grandchildren visiting, stiff mornings, retirement days, cooking for the family, walking with friends).
 - Clear, simple words, short sentences, warm first-person grandma voice.
 - Everything must be accurate and widely documented. No made-up facts or numbers.
 {rules}
 - Portray her culture respectfully and naturally. No accents written into the text, no stereotypes.
-- on_screen: a short caption for that scene, max 5 words, e.g. "Step 1: Wash the rice",
-  "Step 2: Lift one knee", "Benefit: Stronger balance".
+- on_screen: a short caption for that scene, max 5 words, e.g. "Stiff knees?", "Step 1: Sit tall",
+  "Step 2: Lift one knee", "How it helps", "Try it and tell me!".
 - image_prompt: show EXACTLY the action the narration describes in that scene (if she says "chop the
   onion", show her hands chopping an onion; if she says "lift your right knee", show her holding a chair
   and lifting her right knee). In the first and last scenes she faces the camera and talks like she is
@@ -101,7 +107,7 @@ Return JSON only, with this shape:
   "topic": "2 to 5 word topic, e.g. the dish or the habit",
   "fact": "the key takeaway in one plain sentence (for a recipe: dish name and main benefit)",
   "scenes": [{{"narration": "what grandma says", "on_screen": "short caption", "image_prompt": "..."}}],
-  "description": "3 to 4 sentence YouTube description; for a recipe list the ingredients; end with a question that invites comments",
+  "description": "3 to 4 sentence YouTube description; for a recipe list the ingredients; end by asking viewers to try it and share in the comments how it went",
   "tags": ["8 to 12 short tags"],
   "instagram_caption": "friendly caption, 1 to 3 short lines, 2 emojis max"
 }}
