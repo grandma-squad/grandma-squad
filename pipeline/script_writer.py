@@ -62,8 +62,9 @@ def write(char, note="", seed=None, slot=1):
     rules = EXTRA_RULES.get(mission["name"], "").format(heritage=char["heritage"])
     prompt = f"""
 You write scripts for "{s['channel_name']}", a YouTube Shorts channel for {s['audience']}.
-Grandmothers from every culture of the world share one piece of real, useful grandma wisdom per video,
-in a warm, lively, slightly cheeky way.
+Grandmothers from every culture of the world talk straight to the camera, to people of their OWN age,
+like a friend chatting with friends over tea: "my dear friends", "at our age", "when our knees complain".
+Each video shares one piece of real, useful wisdom in a warm, lively, slightly cheeky way.
 
 Today's grandma: {char['name']} (people call her "{char['kid_name']}"), {char['heritage']} heritage.
 Personality: {char['personality']}.
@@ -78,11 +79,14 @@ Rules:
   Total narration 80 to 110 words (about 40 seconds spoken). Short one-line scenes are NOT acceptable.
 - Scene 1 is a friendly hook. Middle scenes give the steps clearly. The benefits come near the end.
   The last scene ends with a cheerful sign-off inviting viewers back tomorrow (vary the wording).
-- Clear, simple words everyone can follow. Warm grandma voice, first person.
+- Speak to fellow seniors as equals, never like talking to children. Use relatable life-after-60 moments
+  (grandchildren visiting, stiff mornings, retirement days, cooking for the family, walking with friends).
+- Clear, simple words, short sentences, warm first-person grandma voice.
 - Everything must be accurate and widely documented. No made-up facts or numbers.
 {rules}
 - Portray her culture respectfully and naturally. No accents written into the text, no stereotypes.
-- image_prompt: describe ONE vivid moment for that scene showing the grandma doing that exact step,
+- image_prompt: describe ONE vivid moment for that scene; in the first and last scenes she looks at the
+  camera and talks like she is chatting with a friend; other scenes show her doing that exact step,
   her expression, the setting and the camera angle (close-ups of food or movements are welcome).
   Do not describe her face details. Never include text, labels or signs in the image.
 

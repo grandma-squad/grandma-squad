@@ -3,7 +3,7 @@
   "timezone": "America/Toronto",
   "videos_per_day": 3,
   "scenes_per_video": 5,
-  "audience": "adults, seniors and families everywhere who enjoy simple, practical wisdom from grandmothers of every culture",
+  "audience": "people aged 55 and over (grandparents, retirees and their friends), spoken to as equals by a grandmother of their own generation",
   "gemini_text_model": "gemini-2.5-flash",
   "gemini_image_model": "gemini-2.5-flash-image",
   "youtube_category_id": "27",
