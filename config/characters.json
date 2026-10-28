@@ -13,7 +13,7 @@
       "puzzles"
     ],
     "voice": "en-IN-NeerjaNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -30,7 +30,7 @@
       "music"
     ],
     "voice": "en-US-AvaNeural",
-    "rate": "-6%",
+    "rate": "-18%",
     "pitch": "-8Hz"
   },
   {
@@ -47,7 +47,7 @@
       "storytelling"
     ],
     "voice": "en-US-JennyNeural",
-    "rate": "-10%",
+    "rate": "-18%",
     "pitch": "-10Hz"
   },
   {
@@ -64,7 +64,7 @@
       "rivers"
     ],
     "voice": "en-US-EmmaNeural",
-    "rate": "-6%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -81,7 +81,7 @@
       "painting"
     ],
     "voice": "en-GB-SoniaNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-8Hz"
   },
   {
@@ -93,7 +93,7 @@
     "personality": "calm, precise and quietly funny, loves tea, gardens and morning walks",
     "favourite_things": [],
     "voice": "en-US-EmmaNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -105,7 +105,7 @@
     "personality": "loud laugh, generous cook, loves market days and dancing",
     "favourite_things": [],
     "voice": "en-NG-EzinneNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -117,7 +117,7 @@
     "personality": "hospitable and witty, feeds everyone, loves herbs and olive trees",
     "favourite_things": [],
     "voice": "en-GB-LibbyNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-8Hz"
   },
   {
@@ -129,7 +129,7 @@
     "personality": "sweet and teasing, loves karaoke, rice dishes and her garden",
     "favourite_things": [],
     "voice": "en-PH-RosaNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -141,7 +141,7 @@
     "personality": "energetic and wise, practises tai chi in the park, loves soups and dumplings",
     "favourite_things": [],
     "voice": "en-HK-YanNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -153,7 +153,7 @@
     "personality": "stern-looking but soft-hearted, loves pickling, soup and long walks",
     "favourite_things": [],
     "voice": "en-IE-EmilyNeural",
-    "rate": "-10%",
+    "rate": "-18%",
     "pitch": "-8Hz"
   },
   {
@@ -165,7 +165,7 @@
     "personality": "sunny and musical, loves samba, fruit and the beach",
     "favourite_things": [],
     "voice": "en-CA-ClaraNeural",
-    "rate": "-6%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -177,7 +177,7 @@
     "personality": "hardworking farmer and storyteller, loves tea and long walks",
     "favourite_things": [],
     "voice": "en-KE-AsiliaNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -189,7 +189,7 @@
     "personality": "patient weaver and cook, loves potatoes, quinoa and mountain air",
     "favourite_things": [],
     "voice": "en-NZ-MollyNeural",
-    "rate": "-8%",
+    "rate": "-18%",
     "pitch": "-6Hz"
   },
   {
@@ -201,7 +201,7 @@
     "personality": "calm and wise, loves wild rice, berry picking and the lakeshore",
     "favourite_things": [],
     "voice": "en-CA-ClaraNeural",
-    "rate": "-10%",
+    "rate": "-18%",
     "pitch": "-8Hz"
   }
 ]

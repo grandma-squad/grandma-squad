@@ -42,7 +42,7 @@ MOTIONS = [
 ]
 
 
-def scene_clip(img, audio, out, motion, pad=0.4, first=False, last=False):
+def scene_clip(img, audio, out, motion, pad=0.9, first=False, last=False):
     secs = duration(audio) + pad
     frames = int(secs * FPS)
     z, x, y = (e.format(F=frames) for e in MOTIONS[motion % len(MOTIONS)])
