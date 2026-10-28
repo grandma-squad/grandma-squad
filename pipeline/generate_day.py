@@ -25,9 +25,8 @@ def ensure_reference(char):
     ref = ASSETS / "characters" / f"{char['id']}.png"
     if not ref.exists():
         log("creating reference portrait for", char["name"])
-        ai.image(f"Photorealistic portrait photo of {char['look']}, smiling warmly at the camera, "
-                 "upper body, soft natural window light, plain softly blurred home background, "
-                 "no text, no watermark", ref, aspect="3:4", seed=sum(map(ord, char["id"])) * 97,
+        ai.image(f"{settings().get('visual_style', '')}. Character portrait of {char['look']}, "
+                 "smiling warmly at the camera, upper body, softly blurred cozy home background", ref, aspect="3:4", seed=sum(map(ord, char["id"])) * 97,
                  mock_label=char["name"])
         git_commit_push([ref], f"reference portrait: {char['name']}")
     return ref

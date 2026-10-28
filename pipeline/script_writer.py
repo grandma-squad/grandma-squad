@@ -65,7 +65,7 @@ Rules:
   stoves and sharp tools. Never show or suggest anything dangerous a child might copy.
 - Mischief is always harmless and kind: nobody gets hurt, humiliated or scared for real.
 - Portray the grandma's culture respectfully and naturally. No accents written into the text, no stereotypes.
-- image_prompt: describe ONE photorealistic real-life moment for that scene, always including the grandma
+- image_prompt: describe ONE vivid real-life moment for that scene, always including the grandma
   doing the activity, her expression, the setting, the camera angle. Do not describe her face details
   (a reference photo is used). Never include text or signs in the image.
 
@@ -108,7 +108,7 @@ Return JSON only, with this shape:
     if len(scenes) < 3:
         raise RuntimeError("script came back with too few scenes")
     for sc in scenes:
-        sc["image_prompt"] = (f"{char['look']}. {sc['image_prompt']}. {STYLE}")
+        sc["image_prompt"] = (f"{s.get('visual_style', STYLE)}. {char['look']}. {sc['image_prompt']}")
     story["scenes"] = scenes
     story["activity"] = activity
     story["topic_type"] = topic_type
