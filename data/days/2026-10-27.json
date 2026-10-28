@@ -46,12 +46,12 @@
     },
     {
       "slot": 2,
-      "status": "failed",
+      "status": "generating",
       "grandma": "nonna-lucia",
       "grandma_name": "Nonna Lucia",
-      "error": "All image providers failed: Cloudflare @cf/black-forest-labs/flux-1-schnell HTTP 400: {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (535ef4ac-a6c7-4697-8160-67afc1bf567f)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]} | 402 Client Error: Payment Required for url: https://image.pollinations.ai/prompt/a%20warm%20Italian%20grandmother%20in%20her%20early%20seventies%2C%20wavy%20white%20hair%20to%20her%20shoulders%2C%20oli",
+      "error": "",
       "note": "",
-      "updated": "2026-10-28T00:32:15+00:00"
+      "updated": "2026-10-28T00:36:40+00:00"
     },
     {
       "slot": 3,
