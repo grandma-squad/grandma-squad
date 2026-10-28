@@ -22,12 +22,12 @@
     },
     {
       "slot": 3,
-      "status": "generating",
+      "status": "failed",
       "grandma": "nani-kamala",
       "grandma_name": "Nani Kamala",
-      "error": "",
+      "error": "All image providers failed: Cloudflare @cf/black-forest-labs/flux-1-schnell HTTP 400: {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (46bd988d-3280-460f-abd4-a117df3ef671)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]} | 503 Server Error: Service Unavailable for url: https://image.pollinations.ai/prompt/a%20cheerful%20South%20Indian%20grandmother%20in%20her%20late%20sixties%2C%20silver%20hair%20in%20a%20neat%20bun%2C%2",
       "note": "",
-      "updated": "2026-10-28T00:32:16+00:00"
+      "updated": "2026-10-28T00:33:59+00:00"
     }
   ]
 }
