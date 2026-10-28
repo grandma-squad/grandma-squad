@@ -7,5 +7,14 @@
     "fact": "Most zoo accidents happen because visitors get too close to the animals.",
     "activity": "visiting a zoo",
     "topic_type": "staying safe (scams, roads, water, fire)"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": 2,
+    "grandma": "nonna-lucia",
+    "title": "Stormy Dance 🌪",
+    "fact": "Thunderstorms on Earth can be thousands of times stronger than those on Mars.",
+    "activity": "watching a thunderstorm safely from the porch",
+    "topic_type": "space"
   }
 ]
