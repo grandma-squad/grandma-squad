@@ -1,7 +1,7 @@
 name: Daily videos
 on:
   schedule:
-    - cron: "37 10 * * *"   # about 6:37 am Toronto (summer) / 5:37 am (winter)
+    - cron: "37 0 * * *"    # 8:37 pm Toronto (summer) / 7:37 pm (winter), right after the free AI allowance resets
   workflow_dispatch:
     inputs:
       date: { description: "Day (YYYY-MM-DD, blank = today)", required: false, default: "" }

@@ -15,12 +15,12 @@ Gemini API free tier or Pollinations.ai (scripts and pictures), and Microsoft Ed
 ## How it works
 
 ```
-6:30 am  GitHub's free servers wake up (your phone can sleep)
+8:37 pm  GitHub's free servers wake up (your phone can sleep)
          → AI writes 3 scripts (never repeats a fact)
          → AI draws 5 realistic scenes per video, same grandma face every day
          → Edge voice narrates, ffmpeg adds motion + big subtitles
          → the 3 videos appear in Squad Studio on your phone
-7:30 am  (optional) an iPhone Shortcut saves them into your Photos, album "Grandma Squad"
+9:30 pm  (optional) an iPhone Shortcut saves them into your Photos, album "Grandma Squad"
 You      watch → Save & post → post as a Short in the YouTube app → "I've posted it"
 Sunday   → weekly compilation (16:9, chapters) arrives the same way
 ```
@@ -60,7 +60,7 @@ Save it in Repo → Settings → Secrets and variables → Actions → New secre
 4. Settings → **Make today's videos now** for the first batch (about 15–20 minutes).
 
 ### 5. Auto-save videos to Photos every morning — optional (~5 min)
-iPhone **Shortcuts** app → Automation → **+** → Time of Day → 7:30 AM, Daily → **Run Immediately** →
+iPhone **Shortcuts** app → Automation → **+** → Time of Day → 9:30 PM, Daily → **Run Immediately** →
 New Blank Automation, then add these actions:
 1. **Get Contents of URL** → `https://YOUR-USERNAME.github.io/grandma-squad/today.json`
 2. **Get Dictionary Value** → key `videos`
