@@ -4,12 +4,12 @@
   "items": [
     {
       "slot": 1,
-      "status": "review",
+      "status": "generating",
       "grandma": "halmoni-soonja",
       "grandma_name": "Halmoni Soon-ja",
       "error": "",
       "note": "",
-      "updated": "2026-10-28T00:36:37+00:00",
+      "updated": "2026-10-28T00:43:31+00:00",
       "title": "Zoo Safety 🐒",
       "topic": "Wildlife Safety",
       "fact": "Most zoo accidents happen because visitors get too close to the animals.",
