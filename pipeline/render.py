@@ -104,8 +104,14 @@ Style: Brand,{FONT_NAME},38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = [f"Dialogue: 0,{_ts(0)},{_ts(total)},Brand,,0,0,0,,{_ass_text(channel)}",
-             f"Dialogue: 1,{_ts(0.2)},{_ts(min(3.6, total))},Title,,0,0,0,,{{\\fad(200,300)}}{_ass_text(_plain(title))}"]
-    for start, speech, text in timeline:
+             ]
+    for idx, entry in enumerate(timeline):
+        start, speech, text = entry[0], entry[1], entry[2]
+        secs = entry[3] if len(entry) > 3 else speech
+        label = title if idx == 0 else (entry[4] if len(entry) > 4 else "")
+        if label:
+            lines.append(f"Dialogue: 1,{_ts(start + 0.15)},{_ts(start + secs - 0.1)},Title,,0,0,0,,"
+                         f"{{\\fad(200,200)}}{_ass_text(_plain(label))}")
         chunks = _chunks(text)
         weights = [len(c) + 3 for c in chunks]
         t = start + 0.05
@@ -131,7 +137,7 @@ def render_short(scenes, title, workdir, out_mp4):
         speech = duration(sc["audio"])
         secs = scene_clip(sc["image"], sc["audio"], clip, motion0 + i,
                           first=(i == 0), last=(i == len(scenes) - 1))
-        timeline.append((t, speech, sc["narration"]))
+        timeline.append((t, speech, sc["narration"], secs, sc.get("label", "")))
         t += secs
         clips.append(clip)
     total = t

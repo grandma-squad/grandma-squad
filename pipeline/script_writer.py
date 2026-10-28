@@ -77,7 +77,8 @@ Do NOT repeat any of these recent titles or their topics: {recent_titles}
 Rules:
 - Exactly {n} scenes. EACH scene's narration is 2 full sentences, 15 to 24 words.
   Total narration 80 to 110 words (about 40 seconds spoken). Short one-line scenes are NOT acceptable.
-- Scene 1 is a friendly hook. Middle scenes give the steps clearly. The benefits come near the end.
+- Scene 1 is a friendly hook. Scenes 2 to 4 are clear numbered steps, ONE action per scene, in order.
+  Scene 5 gives the benefits and the sign-off.
   The last scene ends with a cheerful sign-off inviting viewers back tomorrow (vary the wording).
 - Speak to fellow seniors as equals, never like talking to children. Use relatable life-after-60 moments
   (grandchildren visiting, stiff mornings, retirement days, cooking for the family, walking with friends).
@@ -85,8 +86,12 @@ Rules:
 - Everything must be accurate and widely documented. No made-up facts or numbers.
 {rules}
 - Portray her culture respectfully and naturally. No accents written into the text, no stereotypes.
-- image_prompt: describe ONE vivid moment for that scene; in the first and last scenes she looks at the
-  camera and talks like she is chatting with a friend; other scenes show her doing that exact step,
+- on_screen: a short caption for that scene, max 5 words, e.g. "Step 1: Wash the rice",
+  "Step 2: Lift one knee", "Benefit: Stronger balance".
+- image_prompt: show EXACTLY the action the narration describes in that scene (if she says "chop the
+  onion", show her hands chopping an onion; if she says "lift your right knee", show her holding a chair
+  and lifting her right knee). In the first and last scenes she faces the camera and talks like she is
+  chatting with a friend; describe
   her expression, the setting and the camera angle (close-ups of food or movements are welcome).
   Do not describe her face details. Never include text, labels or signs in the image.
 
@@ -95,7 +100,7 @@ Return JSON only, with this shape:
   "title": "catchy YouTube title under 70 characters, include one emoji",
   "topic": "2 to 5 word topic, e.g. the dish or the habit",
   "fact": "the key takeaway in one plain sentence (for a recipe: dish name and main benefit)",
-  "scenes": [{{"narration": "what grandma says", "image_prompt": "..."}}],
+  "scenes": [{{"narration": "what grandma says", "on_screen": "short caption", "image_prompt": "..."}}],
   "description": "3 to 4 sentence YouTube description; for a recipe list the ingredients; end with a question that invites comments",
   "tags": ["8 to 12 short tags"],
   "instagram_caption": "friendly caption, 1 to 3 short lines, 2 emojis max"

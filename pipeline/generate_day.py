@@ -47,7 +47,8 @@ def make_video(day_id, slot, char, note=""):
         img = ai.image(sc["image_prompt"], work / f"scene{i}.png", refs=[ref], aspect="9:16",
                        mock_label=f"{char['kid_name']} · scene {i + 1}", mock_color=colors[i % 5])
         audio = tts.speak(sc["narration"], char, work / f"voice{i}.mp3")
-        scenes.append({"image": img, "audio": audio, "narration": sc["narration"]})
+        scenes.append({"image": img, "audio": audio, "narration": sc["narration"],
+                       "label": str(sc.get("on_screen", ""))[:40]})
 
     video = work / f"slot{slot}.mp4"
     secs = render.render_short(scenes, story["title"], work, video)
