@@ -46,12 +46,46 @@
     },
     {
       "slot": 2,
-      "status": "generating",
+      "status": "review",
       "grandma": "nonna-lucia",
       "grandma_name": "Nonna Lucia",
       "error": "",
       "note": "",
-      "updated": "2026-10-28T00:36:40+00:00"
+      "updated": "2026-10-28T00:37:28+00:00",
+      "title": "Stormy Dance 🌪",
+      "topic": "Space Weather",
+      "fact": "Thunderstorms on Earth can be thousands of times stronger than those on Mars.",
+      "activity": "watching a thunderstorm safely from the porch",
+      "topic_type": "space",
+      "mission": "LAUGH",
+      "narration": [
+        "What's the wildest weather in our universe?",
+        "I love watching thunderstorms from my cozy porch!",
+        "Che bello! The thunder is like a big drumbeat!",
+        "Did you know thunderstorms on Earth are much stronger than those on Mars?",
+        "Stay curious, stay safe, and we'll see you tomorrow!"
+      ],
+      "description": "Join Nonna Lucia as she watches a thunderstorm and learns about space weather. What's your favorite type of storm to watch? Share with us!\n\nToday's fun fact: Thunderstorms on Earth can be thousands of times stronger than those on Mars.\n\nMeet Nonna Lucia and the Grandma Squad — five grandmas sharing one amazing thing every day.\n\n#GrandmaSquad #FunFacts #DidYouKnow #Shorts",
+      "tags": [
+        "Grandma Squad",
+        "Space Weather",
+        "Thunderstorm",
+        "Mars",
+        "Storm Watching",
+        "Science",
+        "Education",
+        "Family Friendly",
+        "Kids Content",
+        "Curious"
+      ],
+      "caption": "Stormy weather got me dancing! 🌪️💃\n\n#GrandmaSquad #FunFacts #DidYouKnow #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-27/slot2.mp4?v=1793147848",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-27/slot2.jpg?v=1793147848",
+      "video_file": "slot2.mp4",
+      "poster_file": "slot2.jpg",
+      "duration": 21.7,
+      "youtube": {},
+      "instagram": {}
     },
     {
       "slot": 3,
