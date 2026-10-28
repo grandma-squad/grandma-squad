@@ -52,5 +52,14 @@
     "fact": "Drinking enough water helps maintain physical health and energy levels.",
     "activity": "her balcony with plants",
     "topic_type": "HEALTH TIP"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": 3,
+    "grandma": "nani-kamala",
+    "title": "Nani's Balance 🧘",
+    "fact": "Regular chair balance exercises improve overall balance and reduce the risk of falls in older adults.",
+    "activity": "her garden on a yoga mat",
+    "topic_type": "EXERCISE"
   }
 ]
