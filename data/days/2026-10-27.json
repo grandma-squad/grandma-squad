@@ -4,12 +4,12 @@
   "items": [
     {
       "slot": 1,
-      "status": "failed",
+      "status": "generating",
       "grandma": "halmoni-soonja",
       "grandma_name": "Halmoni Soon-ja",
-      "error": "All image providers failed: Cloudflare @cf/black-forest-labs/flux-1-schnell HTTP 400: {\"errors\":[{\"message\":\"AiError: Bad input: Error: Additional or unevaluated properties '/seed' at '/' not allowed (3f3f0a84-76b1-4a7d-987e-09609239dd26)\",\"code\":5006}],\"success\":false,\"result\":{},\"messages\":[]} | 402 Client Error: Payment Required for url: https://image.pollinations.ai/prompt/an%20energetic%20Korean%20grandmother%20in%20her%20late%20sixties%2C%20short%20permed%20grey%20hair%2C%20light%20skin%2C",
+      "error": "",
       "note": "",
-      "updated": "2026-10-28T00:30:25+00:00"
+      "updated": "2026-10-28T00:35:55+00:00"
     },
     {
       "slot": 2,
