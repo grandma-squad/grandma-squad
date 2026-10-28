@@ -43,5 +43,14 @@
     "fact": "Kimchi stew is rich in fibre and warms you up.",
     "activity": "an outdoor family courtyard kitchen",
     "topic_type": "RECIPE"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": 2,
+    "grandma": "nonna-lucia",
+    "title": "Hydrate 💧",
+    "fact": "Drinking enough water helps maintain physical health and energy levels.",
+    "activity": "her balcony with plants",
+    "topic_type": "HEALTH TIP"
   }
 ]
