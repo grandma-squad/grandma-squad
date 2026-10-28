@@ -104,7 +104,7 @@ Style: Brand,{FONT_NAME},38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = [f"Dialogue: 0,{_ts(0)},{_ts(total)},Brand,,0,0,0,,{_ass_text(channel)}",
-             f"Dialogue: 1,{_ts(0.2)},{_ts(min(3.6, total))},Title,,0,0,0,,{{\\fad(200,300)}}{_ass_text(title)}"]
+             f"Dialogue: 1,{_ts(0.2)},{_ts(min(3.6, total))},Title,,0,0,0,,{{\\fad(200,300)}}{_ass_text(_plain(title))}"]
     for start, speech, text in timeline:
         chunks = _chunks(text)
         weights = [len(c) + 3 for c in chunks]

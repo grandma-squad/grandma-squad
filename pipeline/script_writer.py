@@ -53,12 +53,14 @@ Topic type: {topic_type}. Connect the topic naturally to the activity.
 Do NOT repeat any of these recent titles or their facts: {recent_titles}
 
 Rules:
-- Exactly {n} scenes. Total narration 70 to 95 words (about 30 to 38 seconds spoken).
+- Exactly {n} scenes. EACH scene's narration is 2 full sentences, 14 to 22 words.
+  Total narration 75 to 100 words (about 35 seconds spoken). Short one-line scenes are NOT acceptable.
 - Scene 1 is a hook question that makes anyone, child or adult, curious. Last scene ends with a cheerful sign-off
   that invites viewers to come back tomorrow (vary the wording).
 - Clear, simple words everyone can follow. Short sentences. Warm, witty, playful grandma voice, first person.
 - Pick facts that surprise adults too, not only children.
-- The fact must be scientifically accurate and widely accepted. No made-up numbers.
+- The fact must be specific, scientifically accurate and widely documented (the kind found in an
+  encyclopedia). Explain the "why" or "how" in plain words. No vague claims, no made-up numbers or statistics.
 - Family-friendly and safe to copy: seatbelts in cars, helmets on bikes, life jackets near water, adults handle
   stoves and sharp tools. Never show or suggest anything dangerous a child might copy.
 - Mischief is always harmless and kind: nobody gets hurt, humiliated or scared for real.
@@ -94,8 +96,15 @@ Return JSON only, with this shape:
         "tags": ["kids", "science", "ocean"],
         "instagram_caption": "Why is the sea salty? 🌊",
     }
-    story = ai.text_json(prompt, mock_result=mock)
-    scenes = story.get("scenes", [])[:n]
+    story, scenes = None, []
+    for attempt in range(4):
+        story = ai.text_json(prompt, mock_result=mock)
+        scenes = story.get("scenes", [])[:n]
+        words = sum(len(str(sc.get("narration", "")).split()) for sc in scenes)
+        if len(scenes) >= 4 and (words >= 60 or story is mock):
+            break
+        prompt += (f"\n\nYour last answer had {len(scenes)} scenes and only {words} words. "
+                   f"Write exactly {n} scenes with 2 full sentences each, 75 to 100 words in total.")
     if len(scenes) < 3:
         raise RuntimeError("script came back with too few scenes")
     for sc in scenes:
