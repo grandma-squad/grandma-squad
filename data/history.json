@@ -16,5 +16,14 @@
     "fact": "Thunderstorms on Earth can be thousands of times stronger than those on Mars.",
     "activity": "watching a thunderstorm safely from the porch",
     "topic_type": "space"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": 3,
+    "grandma": "nani-kamala",
+    "title": "Teddy's Boo Boo 🐻",
+    "fact": "The human body can heal itself with the help of white blood cells fighting infection.",
+    "activity": "putting a bandage on a scraped teddy bear (pretend doctor)",
+    "topic_type": "human body"
   }
 ]
