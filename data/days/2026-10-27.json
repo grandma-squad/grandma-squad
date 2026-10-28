@@ -4,12 +4,12 @@
   "items": [
     {
       "slot": 1,
-      "status": "review",
+      "status": "generating",
       "grandma": "halmoni-soonja",
       "grandma_name": "Halmoni Soon-ja",
       "error": "",
       "note": "",
-      "updated": "2026-10-28T00:58:41+00:00",
+      "updated": "2026-10-28T01:08:33+00:00",
       "title": "Kimchi Stew 🍲",
       "topic": "Kimchi Stew Recipe",
       "fact": "Kimchi stew is rich in fibre and warms you up.",
