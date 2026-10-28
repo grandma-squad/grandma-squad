@@ -146,8 +146,7 @@ def image(prompt, out_path, refs=(), aspect="9:16", seed=None, mock_label="", mo
                  "3:4": "portrait framing, subject centered"}.get(aspect, "")
         for attempt in range(3):
             try:
-                res = _cf_run(CF_IMAGE_MODEL, {"prompt": f"{prompt[:1800]}, {shape}", "steps": 6,
-                                               "seed": seed or random.randint(1, 10**6)})
+                res = _cf_run(CF_IMAGE_MODEL, {"prompt": f"{prompt[:1800]}, {shape}", "steps": 6})
                 Image.open(BytesIO(base64.b64decode(res["image"]))).convert("RGB").save(out_path)
                 return out_path
             except Exception as e:  # noqa: BLE001
