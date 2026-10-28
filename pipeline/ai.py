@@ -1,4 +1,4 @@
-"""Free AI calls: Gemini API free tier first, Pollinations.ai as a no-key fallback."""
+"""Free AI calls: Gemini API (if a key is set), Cloudflare Workers AI free tier, then Pollinations.ai."""
 import base64
 import json
 import os
@@ -33,6 +33,23 @@ def _gemini(model, parts, gen_config, timeout=180):
     return r.json()
 
 
+def _cf():
+    return os.environ.get("CF_ACCOUNT_ID", "").strip(), os.environ.get("CF_API_TOKEN", "").strip()
+
+
+def _cf_run(model, payload, timeout=180):
+    acct, tok = _cf()
+    r = requests.post(f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/{model}",
+                      headers={"Authorization": f"Bearer {tok}"}, json=payload, timeout=timeout)
+    if r.status_code != 200:
+        raise RuntimeError(f"Cloudflare {model} HTTP {r.status_code}: {r.text[:300]}")
+    return r.json()["result"]
+
+
+CF_TEXT_MODEL = os.environ.get("CF_TEXT_MODEL", "@cf/meta/llama-3.3-70b-instruct-fp8-fast")
+CF_IMAGE_MODEL = os.environ.get("CF_IMAGE_MODEL", "@cf/black-forest-labs/flux-1-schnell")
+
+
 def _extract_json(text):
     text = text.strip()
     m = re.search(r"\{.*\}", text, re.S)
@@ -56,7 +73,19 @@ def text_json(prompt, mock_result=None):
                 errors.append(str(e))
                 log("gemini text failed:", str(e)[:200])
                 time.sleep(10 * (attempt + 1))
-    for attempt in range(3):
+    if all(_cf()):
+        for attempt in range(3):
+            try:
+                res = _cf_run(CF_TEXT_MODEL, {"max_tokens": 1800, "temperature": 0.9, "messages": [
+                    {"role": "system", "content": "You are a careful scriptwriter. Reply with one valid JSON object only, no other text."},
+                    {"role": "user", "content": prompt}]})
+                out = res.get("response", res)
+                return out if isinstance(out, dict) else _extract_json(str(out))
+            except Exception as e:  # noqa: BLE001
+                errors.append(str(e))
+                log("cloudflare text failed:", str(e)[:200])
+                time.sleep(10)
+    for attempt in range(2):
         try:
             r = requests.post("https://text.pollinations.ai/openai", timeout=180, json={
                 "model": "openai",
@@ -73,6 +102,9 @@ def text_json(prompt, mock_result=None):
     raise RuntimeError("All text providers failed: " + " | ".join(errors[-3:]))
 
 
+_GEMINI_IMAGE_OFF = False
+
+
 def image(prompt, out_path, refs=(), aspect="9:16", seed=None, mock_label="", mock_color=(240, 200, 160)):
     """Generate an image to out_path. refs = reference image paths for character consistency."""
     out_path = Path(out_path)
@@ -80,8 +112,9 @@ def image(prompt, out_path, refs=(), aspect="9:16", seed=None, mock_label="", mo
     if MOCK:
         _placeholder(out_path, mock_label or prompt[:80], aspect, mock_color)
         return out_path
+    global _GEMINI_IMAGE_OFF
     errors = []
-    if _key():
+    if _key() and not _GEMINI_IMAGE_OFF:
         model = os.environ.get("GEMINI_IMAGE_MODEL") or settings()["gemini_image_model"]
         parts = []
         for ref in refs:
@@ -104,9 +137,25 @@ def image(prompt, out_path, refs=(), aspect="9:16", seed=None, mock_label="", mo
             except Exception as e:  # noqa: BLE001
                 errors.append(str(e))
                 log("gemini image failed:", str(e)[:200])
-                time.sleep(20 * (attempt + 1))
+                if any(k in str(e) for k in ("429", "RESOURCE_EXHAUSTED", "limit: 0", "billing", "403")):
+                    _GEMINI_IMAGE_OFF = True  # no free image quota: stop trying Gemini for this run
+                    break
+                time.sleep(10)
+    if all(_cf()):
+        shape = {"9:16": "tall vertical portrait framing, subject centered", "16:9": "wide framing",
+                 "3:4": "portrait framing, subject centered"}.get(aspect, "")
+        for attempt in range(3):
+            try:
+                res = _cf_run(CF_IMAGE_MODEL, {"prompt": f"{prompt[:1800]}, {shape}", "steps": 6,
+                                               "seed": seed or random.randint(1, 10**6)})
+                Image.open(BytesIO(base64.b64decode(res["image"]))).convert("RGB").save(out_path)
+                return out_path
+            except Exception as e:  # noqa: BLE001
+                errors.append(str(e))
+                log("cloudflare image failed:", str(e)[:200])
+                time.sleep(8)
     w, h = (1080, 1920) if aspect == "9:16" else (1920, 1080) if aspect == "16:9" else (1024, 1024)
-    for attempt in range(4):
+    for attempt in range(2):
         try:
             url = ("https://image.pollinations.ai/prompt/" + urllib.parse.quote(prompt[:1500])
                    + f"?width={w}&height={h}&nologo=true&model=flux&seed={seed or random.randint(1, 10**6)}")
