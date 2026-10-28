@@ -34,5 +34,14 @@
     "fact": "Helping others can increase our own happiness and well-being.",
     "activity": "making a fruit salad",
     "topic_type": "kindness and standing up for others"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": 1,
+    "grandma": "halmoni-soonja",
+    "title": "Kimchi Stew 🍲",
+    "fact": "Kimchi stew is rich in fibre and warms you up.",
+    "activity": "an outdoor family courtyard kitchen",
+    "topic_type": "RECIPE"
   }
 ]
