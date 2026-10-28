@@ -4,12 +4,12 @@
   "items": [
     {
       "slot": 1,
-      "status": "review",
+      "status": "generating",
       "grandma": "halmoni-soonja",
       "grandma_name": "Halmoni Soon-ja",
       "error": "",
       "note": "",
-      "updated": "2026-10-28T00:44:46+00:00",
+      "updated": "2026-10-28T00:57:34+00:00",
       "title": "Fruit Salad 🍎",
       "topic": "Kindness Matters",
       "fact": "Helping others can increase our own happiness and well-being.",
