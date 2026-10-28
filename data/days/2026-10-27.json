@@ -19,6 +19,15 @@
       "error": "All image providers failed: 503 Server Error: Service Unavailable for url: https://image.pollinations.ai/prompt/Photorealistic%20portrait%20photo%20of%20a%20warm%20Italian%20grandmother%20in%20her%20early%20seventies%2C%20wavy%20white%20hair%20to%20her%20shoulders%2C%20olive%20skin%2C%20green%20eyes%2C%20wearing%20a%20cozy%20olive-green%20knit%20sweater%20and%20a%20silver%20necklace%2C%20an%20apron%20when%20cooking%2C%20smiling%20warmly%20at%20the%20camera%2C%20upper%20body%2C%20soft%20natural%2",
       "note": "",
       "updated": "2026-10-28T00:12:33+00:00"
+    },
+    {
+      "slot": 3,
+      "status": "generating",
+      "grandma": "nani-kamala",
+      "grandma_name": "Nani Kamala",
+      "error": "",
+      "note": "",
+      "updated": "2026-10-28T00:12:35+00:00"
     }
   ]
 }
