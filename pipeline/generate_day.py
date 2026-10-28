@@ -55,11 +55,15 @@ def make_video(day_id, slot, char, note=""):
     urls = upload_assets(day_id, [video, poster])
 
     tags = [t.strip("#") for t in story.get("tags", [])][:15]
-    hashtags = " ".join(s["default_hashtags"])
+    hashtags = " ".join(story.get("mission_hashtags", []) + s["default_hashtags"])
+    note = ""
+    if story.get("mission") in ("HEALTH TIP", "EXERCISE"):
+        note = ("\n\nThis video shares general wellness information, not medical advice. "
+                "Please check with your doctor before starting new exercises or if you have a health condition.")
     description = (f"{story.get('description', '')}\n\n"
-                   f"Today's fun fact: {story.get('fact', '')}\n\n"
-                   f"Meet {char['name']} and the {s['channel_name']} — five grandmas sharing one "
-                   f"amazing thing every day.\n\n{hashtags}")
+                   f"Today's grandma wisdom: {story.get('fact', '')}{note}\n\n"
+                   f"Meet {char['name']} and the {s['channel_name']}: grandmothers from every corner of the world "
+                   f"sharing recipes, health tips and gentle exercises every day.\n\n{hashtags}")
     caption = f"{story.get('instagram_caption', story['title'])}\n\n{hashtags}"
     v = int(time.time())
     item = update_item(

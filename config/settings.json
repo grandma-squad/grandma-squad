@@ -3,7 +3,7 @@
   "timezone": "America/Toronto",
   "videos_per_day": 3,
   "scenes_per_video": 5,
-  "audience": "curious people of all ages: families, adults, teens and kids watching together",
+  "audience": "adults, seniors and families everywhere who enjoy simple, practical wisdom from grandmothers of every culture",
   "gemini_text_model": "gemini-2.5-flash",
   "gemini_image_model": "gemini-2.5-flash-image",
   "youtube_category_id": "27",
@@ -11,8 +11,7 @@
   "youtube_privacy": "public",
   "default_hashtags": [
     "#GrandmaSquad",
-    "#FunFacts",
-    "#DidYouKnow",
+    "#GrandmaWisdom",
     "#Shorts"
   ],
   "activities": [
@@ -73,16 +72,52 @@
   ],
   "missions": {
     "1": {
-      "name": "THINK",
-      "goal": "a surprising true fact or clever idea that makes viewers stop and think, delivered with a cheeky twist"
+      "name": "RECIPE",
+      "goal": "one quick or ancient traditional recipe from her own culture: name the dish, its few real ingredients, 3 to 4 easy steps, and 1 or 2 honest benefits (nutrition, comfort, tradition)",
+      "settings": [
+        "her home kitchen full of cultural details",
+        "a sunny kitchen table with fresh ingredients",
+        "an outdoor family courtyard kitchen",
+        "a cozy kitchen at dawn with steam rising from a pot"
+      ],
+      "hashtags": [
+        "#Recipe",
+        "#TraditionalFood",
+        "#GrandmaRecipes"
+      ]
     },
     "2": {
-      "name": "LAUGH",
-      "goal": "a funny real-life moment: a harmless mischievous prank, a silly mix-up or grandma outsmarting someone, ending with a small lesson or fact"
+      "name": "HEALTH TIP",
+      "goal": "one practical, evidence-based everyday health habit (for example sleep, hydration, posture, eating slowly, sunlight, staying social, hand washing, eye rest): what to do, how to do it, and its benefits; a traditional habit from her culture is welcome only if it is safe and supported by evidence",
+      "settings": [
+        "her bright living room",
+        "her garden in the morning",
+        "a park bench with a friend",
+        "her bedroom at night, getting ready for sleep",
+        "her balcony with plants",
+        "a neighbourhood walk"
+      ],
+      "hashtags": [
+        "#HealthTips",
+        "#HealthyAging",
+        "#Wellness"
+      ]
     },
     "3": {
-      "name": "PROTECT",
-      "goal": "grandma protecting something: the planet, animals, a neighbour, her own health or a scam target; a practical tip viewers can use"
+      "name": "EXERCISE",
+      "goal": "one simple, safe exercise for older adults (chair exercise, balance, gentle stretch, walking, breathing or a gentle traditional movement from her culture): exact steps with counts, one safety tip, and its benefits",
+      "settings": [
+        "her living room with a sturdy chair",
+        "a quiet park in the morning",
+        "her garden on a yoga mat",
+        "a community hall with soft light",
+        "her porch with a sturdy chair"
+      ],
+      "hashtags": [
+        "#SeniorFitness",
+        "#ChairExercise",
+        "#HealthyAging"
+      ]
     }
   },
   "visual_style": "3D animated movie style, an elderly grandmother clearly in her seventies with wrinkles, laugh lines and grey hair, stylized with expressive eyes and soft features (never childlike), detailed textures, warm cinematic lighting, vibrant colours, high-quality 3D render like a modern family animated film, vertical 9:16 composition with the character in the upper two-thirds, no text, no logos, no watermark"
