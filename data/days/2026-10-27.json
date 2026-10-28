@@ -4,12 +4,12 @@
   "items": [
     {
       "slot": 1,
-      "status": "generating",
+      "status": "failed",
       "grandma": "halmoni-soonja",
       "grandma_name": "Halmoni Soon-ja",
-      "error": "",
+      "error": "All image providers failed: 402 Client Error: Payment Required for url: https://image.pollinations.ai/prompt/Photorealistic%20portrait%20photo%20of%20an%20energetic%20Korean%20grandmother%20in%20her%20late%20sixties%2C%20short%20permed%20grey%20hair%2C%20light%20skin%2C%20wearing%20a%20lavender%20fleece%20jacket%2C%20hiking%20pants%20and%20a%20sun%20visor%2C%20binoculars%20around%20her%20neck%20when%20outdoors%2C%20smiling%20warmly%20at%20the%20camera%2C%20upper%20body%2C%20soft%20natural%20wind",
       "note": "",
-      "updated": "2026-10-28T00:10:24+00:00"
+      "updated": "2026-10-28T00:11:07+00:00"
     }
   ]
 }
