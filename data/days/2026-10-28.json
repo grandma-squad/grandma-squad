@@ -47,12 +47,46 @@
     },
     {
       "slot": 2,
-      "status": "generating",
+      "status": "review",
       "grandma": "teta-leila",
       "grandma_name": "Teta Leila",
       "error": "",
       "note": "",
-      "updated": "2026-10-29T01:37:59+00:00"
+      "updated": "2026-10-29T01:39:41+00:00",
+      "title": "Teta's Morning Stretch 🌞",
+      "topic": "Daily Stretching",
+      "fact": "Regular morning stretching improves flexibility and reduces stiffness in older adults.",
+      "activity": "her bright living room",
+      "topic_type": "HEALTH TIP",
+      "mission": "HEALTH TIP",
+      "narration": [
+        "My mornings are stiff, my dear. I struggle to get out of bed at our age.",
+        "So I do this: first, I sit tall on the edge of my bed. I take a deep breath and feel the air fill my lungs.",
+        "Next, I lift my right knee towards my chest, then lower it back down gently. I repeat this motion with my left knee.",
+        "After that, I stand up and stretch my arms over my head, feeling the stretch in my shoulders and back. I take another deep breath and let my arms fall back down.",
+        "This morning routine helps me loosen up my muscles and feel more energized throughout the day. It's a simple habit that makes a big difference at our age.",
+        "Try it tomorrow morning, my friends, and tell me in the comments how you feel. Remember to always consult your doctor if you have any concerns about your health."
+      ],
+      "description": "Join Teta Leila as she shares her morning stretching routine to help improve flexibility and reduce stiffness. This simple habit can make a big difference in your daily life. Try it out and share in the comments how it went! Don't forget to consult your doctor if you have any health concerns.\n\nToday's grandma wisdom: Regular morning stretching improves flexibility and reduces stiffness in older adults.\n\nThis video shares general wellness information, not medical advice. Please check with your doctor before starting new exercises or if you have a health condition.\n\nMeet Teta Leila and the Grandma Squad: grandmothers from every corner of the world sharing recipes, health tips and gentle exercises every day.\n\n#HealthTips #HealthyAging #Wellness #GrandmaSquad #GrandmaWisdom #Shorts",
+      "tags": [
+        "morning stretch",
+        "flexibility",
+        "stiffness",
+        "older adults",
+        "health tips",
+        "Lebanese culture",
+        "grandma's advice",
+        "healthy habits",
+        "wellness"
+      ],
+      "caption": "Start your day with a gentle stretch 🌞💆‍♀️\n\n#HealthTips #HealthyAging #Wellness #GrandmaSquad #GrandmaWisdom #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-28/slot2.mp4?v=1793237981",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-28/slot2.jpg?v=1793237981",
+      "video_file": "slot2.mp4",
+      "poster_file": "slot2.jpg",
+      "duration": 76.8,
+      "youtube": {},
+      "instagram": {}
     }
   ]
 }
