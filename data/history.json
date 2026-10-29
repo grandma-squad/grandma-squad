@@ -70,5 +70,14 @@
     "fact": "Egusi soup is rich in fibre and protein from the egusi seeds and vegetables.",
     "activity": "her home kitchen full of cultural details",
     "topic_type": "RECIPE"
+  },
+  {
+    "date": "2026-10-28",
+    "slot": 2,
+    "grandma": "teta-leila",
+    "title": "Teta's Morning Stretch 🌞",
+    "fact": "Regular morning stretching improves flexibility and reduces stiffness in older adults.",
+    "activity": "her bright living room",
+    "topic_type": "HEALTH TIP"
   }
 ]
