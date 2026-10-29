@@ -44,6 +44,15 @@
       "duration": 53.6,
       "youtube": {},
       "instagram": {}
+    },
+    {
+      "slot": 2,
+      "status": "generating",
+      "grandma": "teta-leila",
+      "grandma_name": "Teta Leila",
+      "error": "",
+      "note": "",
+      "updated": "2026-10-29T01:37:59+00:00"
     }
   ]
 }
