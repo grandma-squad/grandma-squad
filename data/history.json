@@ -61,5 +61,14 @@
     "fact": "Regular chair balance exercises improve overall balance and reduce the risk of falls in older adults.",
     "activity": "her garden on a yoga mat",
     "topic_type": "EXERCISE"
+  },
+  {
+    "date": "2026-10-28",
+    "slot": 1,
+    "grandma": "mama-ngozi",
+    "title": "Mama's Egusi 🍲",
+    "fact": "Egusi soup is rich in fibre and protein from the egusi seeds and vegetables.",
+    "activity": "her home kitchen full of cultural details",
+    "topic_type": "RECIPE"
   }
 ]
