@@ -79,5 +79,14 @@
     "fact": "Regular morning stretching improves flexibility and reduces stiffness in older adults.",
     "activity": "her bright living room",
     "topic_type": "HEALTH TIP"
+  },
+  {
+    "date": "2026-10-28",
+    "slot": 3,
+    "grandma": "lola-remedios",
+    "title": "Lola's Chair Sway 🌸",
+    "fact": "Gentle chair sways improve balance and circulation in older adults.",
+    "activity": "a quiet park in the morning",
+    "topic_type": "EXERCISE"
   }
 ]
