@@ -90,12 +90,46 @@
     },
     {
       "slot": 3,
-      "status": "generating",
+      "status": "review",
       "grandma": "lola-remedios",
       "grandma_name": "Lola Remedios",
       "error": "",
       "note": "",
-      "updated": "2026-10-29T01:39:43+00:00"
+      "updated": "2026-10-29T01:41:23+00:00",
+      "title": "Lola's Chair Sway 🌸",
+      "topic": "Chair Exercise",
+      "fact": "Gentle chair sways improve balance and circulation in older adults.",
+      "activity": "a quiet park in the morning",
+      "topic_type": "EXERCISE",
+      "mission": "EXERCISE",
+      "narration": [
+        "My knees ache when I walk, my dear. Stiff mornings are no fun at our age.",
+        "So I do this: sit tall with feet flat. Hold a sturdy chair for support, my friends.",
+        "Next, I lift my right knee, hold for 3 seconds, and do it 10 times on each side. Move slowly, my dear.",
+        "Then, I sway my chair gently from side to side, 5 times, feeling the movement. Breathe normally, my friends.",
+        "This improved my balance and circulation, and it can help you too, my dear. It's a simple way to feel better at our age.",
+        "Try it tomorrow morning, my friends, and tell me in the comments how you feel. You deserve to feel good, and I'm proud of you."
+      ],
+      "description": "Join Lola in her morning chair exercise routine, improving balance and circulation. Try gentle chair sways with these easy steps. Share your experience in the comments below and let's stay active together!\n\nToday's grandma wisdom: Gentle chair sways improve balance and circulation in older adults.\n\nThis video shares general wellness information, not medical advice. Please check with your doctor before starting new exercises or if you have a health condition.\n\nMeet Lola Remedios and the Grandma Squad: grandmothers from every corner of the world sharing recipes, health tips and gentle exercises every day.\n\n#SeniorFitness #ChairExercise #HealthyAging #GrandmaSquad #GrandmaWisdom #Shorts",
+      "tags": [
+        "chair exercise",
+        "balance",
+        "circulation",
+        "older adults",
+        "fitness",
+        "health",
+        "wellness",
+        "Lola's tips",
+        "grandma's wisdom"
+      ],
+      "caption": "Stay active with Lola's simple chair sways! 🌸💛\n\n#SeniorFitness #ChairExercise #HealthyAging #GrandmaSquad #GrandmaWisdom #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-28/slot3.mp4?v=1793238083",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-28/slot3.jpg?v=1793238083",
+      "video_file": "slot3.mp4",
+      "poster_file": "slot3.jpg",
+      "duration": 67.7,
+      "youtube": {},
+      "instagram": {}
     }
   ]
 }
