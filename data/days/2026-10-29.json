@@ -46,12 +46,47 @@
     },
     {
       "slot": 2,
-      "status": "generating",
+      "status": "review",
       "grandma": "babushka-olga",
       "grandma_name": "Babushka Olga",
       "error": "",
       "note": "",
-      "updated": "2026-10-30T01:41:56+00:00"
+      "updated": "2026-10-30T01:43:33+00:00",
+      "title": "Babushka's Walk 🚶",
+      "topic": "Daily Walking",
+      "fact": "Regular walking can help reduce stiffness and improve overall health in older adults.",
+      "activity": "her balcony with plants",
+      "topic_type": "HEALTH TIP",
+      "mission": "HEALTH TIP",
+      "narration": [
+        "My mornings are stiff, my dear. Walking helps me loosen up.",
+        "So I do this: I schedule a daily walk. Step 1: Start with short walks.",
+        "Next, I find a walking buddy. Step 2: Invite a friend to join me.",
+        "Then, I make it a habit. Step 3: Walk at the same time every day.",
+        "This habit helps me stay flexible and strong. Walking improves my balance too.",
+        "Try walking with a friend tomorrow, my dear, and tell me how you feel. Remember to ask your doctor about any health concerns."
+      ],
+      "description": "Join Babushka Olga as she shares her daily walking habit and how it helps her stay healthy and strong. Regular walking can reduce stiffness and improve overall health in older adults. Try incorporating a short walk into your daily routine and share with us in the comments how it makes you feel!\n\nToday's grandma wisdom: Regular walking can help reduce stiffness and improve overall health in older adults.\n\nThis video shares general wellness information, not medical advice. Please check with your doctor before starting new exercises or if you have a health condition.\n\nMeet Babushka Olga and the Grandma Squad: grandmothers from every corner of the world sharing recipes, health tips and gentle exercises every day.\n\n#HealthTips #HealthyAging #Wellness #GrandmaSquad #GrandmaWisdom #Shorts",
+      "tags": [
+        "walking",
+        "health",
+        "fitness",
+        "older adults",
+        "staying active",
+        "balance",
+        "flexibility",
+        "wellness",
+        "self-care",
+        "healthy habits"
+      ],
+      "caption": "Take a walk with me! 🚶️💚\n\n#HealthTips #HealthyAging #Wellness #GrandmaSquad #GrandmaWisdom #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-29/slot2.mp4?v=1793324613",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-29/slot2.jpg?v=1793324613",
+      "video_file": "slot2.mp4",
+      "poster_file": "slot2.jpg",
+      "duration": 59.8,
+      "youtube": {},
+      "instagram": {}
     }
   ]
 }
