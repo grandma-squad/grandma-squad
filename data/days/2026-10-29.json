@@ -43,6 +43,15 @@
       "duration": 59.4,
       "youtube": {},
       "instagram": {}
+    },
+    {
+      "slot": 2,
+      "status": "generating",
+      "grandma": "babushka-olga",
+      "grandma_name": "Babushka Olga",
+      "error": "",
+      "note": "",
+      "updated": "2026-10-30T01:41:56+00:00"
     }
   ]
 }
