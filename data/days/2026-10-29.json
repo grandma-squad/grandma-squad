@@ -4,12 +4,45 @@
   "items": [
     {
       "slot": 1,
-      "status": "generating",
+      "status": "review",
       "grandma": "nainai-mei",
       "grandma_name": "Nai Nai Mei",
       "error": "",
       "note": "",
-      "updated": "2026-10-30T01:40:16+00:00"
+      "updated": "2026-10-30T01:41:53+00:00",
+      "title": "Wonton Soup 🍜",
+      "topic": "Wonton Soup",
+      "fact": "Wonton soup is a comforting and nutritious Chinese dish made with wonton wrappers, pork, and vegetables.",
+      "activity": "her home kitchen full of cultural details",
+      "topic_type": "RECIPE",
+      "mission": "RECIPE",
+      "narration": [
+        "My mornings are stiff, my dear. Some days I struggle to walk after sleeping.",
+        "So I make wonton soup, it helps. First, I boil the chicken broth and add ginger.",
+        "Then I wrap wontons with pork and vegetables. Next, I add them to the boiling broth.",
+        "Finally, I serve the soup hot, garnished with green onions. It's a simple and comforting meal.",
+        "This soup warms me up and is gentle on my stomach. It's a traditional remedy for cold mornings.",
+        "Try making wonton soup this week, my friends, and tell me in the comments how it turns out. You deserve a warm and nourishing meal."
+      ],
+      "description": "Learn how to make traditional Chinese wonton soup with Nai Nai Mei. Ingredients include wonton wrappers, ground pork, vegetables, chicken broth, and ginger. This comforting and nutritious soup is perfect for cold mornings and is gentle on the stomach. Try making it this week and share in the comments how it turns out!\n\nToday's grandma wisdom: Wonton soup is a comforting and nutritious Chinese dish made with wonton wrappers, pork, and vegetables.\n\nMeet Nai Nai Mei and the Grandma Squad: grandmothers from every corner of the world sharing recipes, health tips and gentle exercises every day.\n\n#Recipe #TraditionalFood #GrandmaRecipes #GrandmaSquad #GrandmaWisdom #Shorts",
+      "tags": [
+        "wonton soup",
+        "Chinese recipe",
+        "comfort food",
+        "traditional remedy",
+        "easy meal",
+        "healthy soup",
+        "grandma's kitchen",
+        "Nai Nai Mei"
+      ],
+      "caption": "Warm up with a bowl of traditional wonton soup! 🍜👵\n\n#Recipe #TraditionalFood #GrandmaRecipes #GrandmaSquad #GrandmaWisdom #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-29/slot1.mp4?v=1793324513",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-29/slot1.jpg?v=1793324513",
+      "video_file": "slot1.mp4",
+      "poster_file": "slot1.jpg",
+      "duration": 59.4,
+      "youtube": {},
+      "instagram": {}
     }
   ]
 }
