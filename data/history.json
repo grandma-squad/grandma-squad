@@ -88,5 +88,14 @@
     "fact": "Gentle chair sways improve balance and circulation in older adults.",
     "activity": "a quiet park in the morning",
     "topic_type": "EXERCISE"
+  },
+  {
+    "date": "2026-10-29",
+    "slot": 1,
+    "grandma": "nainai-mei",
+    "title": "Wonton Soup 🍜",
+    "fact": "Wonton soup is a comforting and nutritious Chinese dish made with wonton wrappers, pork, and vegetables.",
+    "activity": "her home kitchen full of cultural details",
+    "topic_type": "RECIPE"
   }
 ]
