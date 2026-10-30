@@ -106,5 +106,14 @@
     "fact": "Regular walking can help reduce stiffness and improve overall health in older adults.",
     "activity": "her balcony with plants",
     "topic_type": "HEALTH TIP"
+  },
+  {
+    "date": "2026-10-29",
+    "slot": 3,
+    "grandma": "vovo-ana",
+    "title": "Vovó's Samba Step 🌟",
+    "fact": "Regular chair exercises can improve balance and circulation in older adults.",
+    "activity": "her porch with a sturdy chair",
+    "topic_type": "EXERCISE"
   }
 ]
