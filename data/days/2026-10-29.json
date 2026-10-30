@@ -90,12 +90,46 @@
     },
     {
       "slot": 3,
-      "status": "generating",
+      "status": "review",
       "grandma": "vovo-ana",
       "grandma_name": "Vovó Ana",
       "error": "",
       "note": "",
-      "updated": "2026-10-30T01:43:36+00:00"
+      "updated": "2026-10-30T01:45:13+00:00",
+      "title": "Vovó's Samba Step 🌟",
+      "topic": "Chair Exercise",
+      "fact": "Regular chair exercises can improve balance and circulation in older adults.",
+      "activity": "her porch with a sturdy chair",
+      "topic_type": "EXERCISE",
+      "mission": "EXERCISE",
+      "narration": [
+        "My knees ache when walking, my dear. Stiff mornings are no fun at our age.",
+        "So I do this: Step 1, sit tall and hold the chair. Hold for 10 seconds, feel the support.",
+        "Step 2, lift one knee, hold for 3 seconds, and breathe normally. Do it 10 times on each side.",
+        "Step 3, gently lower your knee, and take a deep breath. Remember to move slowly and stop if anything hurts.",
+        "This exercise helps me with balance and circulation, and it's safe to do at our age. It's also a great way to loosen up before a samba dance.",
+        "Try it tomorrow, my friends, and tell me in the comments how you feel. You'll be dancing samba in no time, and I'll be cheering for you."
+      ],
+      "description": "Join Vovó Ana as she shares her favorite chair exercise to improve balance and circulation. This simple and safe exercise can be done by older adults at home. Try it out and share in the comments how it went for you, and don't forget to subscribe for more Grandma Squad videos.\n\nToday's grandma wisdom: Regular chair exercises can improve balance and circulation in older adults.\n\nThis video shares general wellness information, not medical advice. Please check with your doctor before starting new exercises or if you have a health condition.\n\nMeet Vovó Ana and the Grandma Squad: grandmothers from every corner of the world sharing recipes, health tips and gentle exercises every day.\n\n#SeniorFitness #ChairExercise #HealthyAging #GrandmaSquad #GrandmaWisdom #Shorts",
+      "tags": [
+        "chair exercise",
+        "balance",
+        "circulation",
+        "older adults",
+        "samba",
+        "Brazilian culture",
+        "grandma squad",
+        "healthy aging",
+        "fitness for seniors"
+      ],
+      "caption": "Get moving with Vovó's Samba Step! 🌟💃\n\n#SeniorFitness #ChairExercise #HealthyAging #GrandmaSquad #GrandmaWisdom #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-29/slot3.mp4?v=1793324712",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-29/slot3.jpg?v=1793324712",
+      "video_file": "slot3.mp4",
+      "poster_file": "slot3.jpg",
+      "duration": 65.6,
+      "youtube": {},
+      "instagram": {}
     }
   ]
 }
