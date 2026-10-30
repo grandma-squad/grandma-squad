@@ -97,5 +97,14 @@
     "fact": "Wonton soup is a comforting and nutritious Chinese dish made with wonton wrappers, pork, and vegetables.",
     "activity": "her home kitchen full of cultural details",
     "topic_type": "RECIPE"
+  },
+  {
+    "date": "2026-10-29",
+    "slot": 2,
+    "grandma": "babushka-olga",
+    "title": "Babushka's Walk 🚶",
+    "fact": "Regular walking can help reduce stiffness and improve overall health in older adults.",
+    "activity": "her balcony with plants",
+    "topic_type": "HEALTH TIP"
   }
 ]
