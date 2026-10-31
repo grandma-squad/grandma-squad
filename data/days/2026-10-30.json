@@ -45,6 +45,15 @@
       "duration": 68.4,
       "youtube": {},
       "instagram": {}
+    },
+    {
+      "slot": 2,
+      "status": "generating",
+      "grandma": "abuelita-saya",
+      "grandma_name": "Abuelita Saya",
+      "error": "",
+      "note": "",
+      "updated": "2026-10-31T01:39:11+00:00"
     }
   ]
 }
