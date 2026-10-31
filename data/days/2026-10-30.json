@@ -4,12 +4,47 @@
   "items": [
     {
       "slot": 1,
-      "status": "generating",
+      "status": "review",
       "grandma": "mama-wanjiru",
       "grandma_name": "Mama Wanjiru",
       "error": "",
       "note": "",
-      "updated": "2026-10-31T01:37:29+00:00"
+      "updated": "2026-10-31T01:39:09+00:00",
+      "title": "Mama's Sukuma Wiki 🌿",
+      "topic": "Sukuma Wiki recipe",
+      "fact": "Sukuma Wiki is a traditional Kenyan stew made with collard greens and rich in fibre.",
+      "activity": "her home kitchen full of cultural details",
+      "topic_type": "RECIPE",
+      "mission": "RECIPE",
+      "narration": [
+        "My joints ache on cold mornings, my dear. Stiffness is a challenge at our age.",
+        "So I do this: I chop one onion and two cloves of garlic. Then I heat some oil in a pan.",
+        "Next, I add the chopped onion and garlic to the pan and sauté until they're soft. Then I add a bunch of collard greens.",
+        "Finally, I season with salt and pepper to taste. Then I serve it with ugali or rice.",
+        "This traditional stew helps me feel warm and comforted on cold mornings. The fibre in the collard greens is also gentle on my stomach.",
+        "Try making Sukuma Wiki this week, my dear, and tell me in the comments how it turns out. You deserve a warm and comforting meal, and I'm proud of you for taking care of yourself."
+      ],
+      "description": "Learn how to make traditional Kenyan Sukuma Wiki, a hearty stew made with collard greens, onion, and garlic. The ingredients are simple: collard greens, onion, garlic, oil, salt, and pepper. Try making it this week and share in the comments how it turns out. Don't forget to subscribe for more recipes and tips from Mama Wanjiru!\n\nToday's grandma wisdom: Sukuma Wiki is a traditional Kenyan stew made with collard greens and rich in fibre.\n\nMeet Mama Wanjiru and the Grandma Squad: grandmothers from every corner of the world sharing recipes, health tips and gentle exercises every day.\n\n#Recipe #TraditionalFood #GrandmaRecipes #GrandmaSquad #GrandmaWisdom #Shorts",
+      "tags": [
+        "Sukuma Wiki",
+        "Kenyan recipe",
+        "collard greens",
+        "traditional stew",
+        "comfort food",
+        "fibre rich",
+        "gentle on stomach",
+        "easy recipe",
+        "home cooking",
+        "grandma's kitchen"
+      ],
+      "caption": "Warm up with Mama's Sukuma Wiki 🌿! Try this traditional Kenyan stew and share your experience 🌸\n\n#Recipe #TraditionalFood #GrandmaRecipes #GrandmaSquad #GrandmaWisdom #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-30/slot1.mp4?v=1793410749",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-30/slot1.jpg?v=1793410749",
+      "video_file": "slot1.mp4",
+      "poster_file": "slot1.jpg",
+      "duration": 68.4,
+      "youtube": {},
+      "instagram": {}
     }
   ]
 }
