@@ -133,5 +133,14 @@
     "fact": "Deep breathing reduces stress and improves oxygen flow to the body.",
     "activity": "a park bench with a friend",
     "topic_type": "HEALTH TIP"
+  },
+  {
+    "date": "2026-10-30",
+    "slot": 3,
+    "grandma": "nokomis-june",
+    "title": "Nokomis' Knee Lift 🏋️",
+    "fact": "Lifting your knees while seated can improve balance and circulation.",
+    "activity": "a community hall with soft light",
+    "topic_type": "EXERCISE"
   }
 ]
