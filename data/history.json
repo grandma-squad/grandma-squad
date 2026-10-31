@@ -124,5 +124,14 @@
     "fact": "Sukuma Wiki is a traditional Kenyan stew made with collard greens and rich in fibre.",
     "activity": "her home kitchen full of cultural details",
     "topic_type": "RECIPE"
+  },
+  {
+    "date": "2026-10-30",
+    "slot": 2,
+    "grandma": "abuelita-saya",
+    "title": "Breathe Easy 🌟",
+    "fact": "Deep breathing reduces stress and improves oxygen flow to the body.",
+    "activity": "a park bench with a friend",
+    "topic_type": "HEALTH TIP"
   }
 ]
