@@ -88,6 +88,15 @@
       "duration": 65.9,
       "youtube": {},
       "instagram": {}
+    },
+    {
+      "slot": 3,
+      "status": "generating",
+      "grandma": "nokomis-june",
+      "grandma_name": "Nokomis June",
+      "error": "",
+      "note": "",
+      "updated": "2026-10-31T01:40:48+00:00"
     }
   ]
 }
