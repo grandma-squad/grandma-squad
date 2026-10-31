@@ -91,12 +91,47 @@
     },
     {
       "slot": 3,
-      "status": "generating",
+      "status": "review",
       "grandma": "nokomis-june",
       "grandma_name": "Nokomis June",
       "error": "",
       "note": "",
-      "updated": "2026-10-31T01:40:48+00:00"
+      "updated": "2026-10-31T01:42:22+00:00",
+      "title": "Nokomis' Knee Lift 🏋️",
+      "topic": "Chair Exercise",
+      "fact": "Lifting your knees while seated can improve balance and circulation.",
+      "activity": "a community hall with soft light",
+      "topic_type": "EXERCISE",
+      "mission": "EXERCISE",
+      "narration": [
+        "My knees ache when I walk, my dear. Stiff mornings are a challenge for me.",
+        "So I do this: lift my knee, hold for 3 seconds. I do it 10 times on each side.",
+        "Next, I lift my other knee, hold for 3 seconds. I repeat it 10 times on the left side.",
+        "Then, I stand up slowly, hold the chair for balance. I take a deep breath and feel steady.",
+        "This exercise helps me with balance and circulation, and it's easy to do. It works because it strengthens my leg muscles.",
+        "Try it tomorrow, my friends, and tell me how you feel. You deserve to feel strong and steady, and I'm rooting for you."
+      ],
+      "description": "Nokomis June shares a simple chair exercise to improve balance and circulation. This exercise is easy to do and can be done by most older adults. Try lifting your knees while seated and see how it helps you. Share in the comments how it went for you!\n\nToday's grandma wisdom: Lifting your knees while seated can improve balance and circulation.\n\nThis video shares general wellness information, not medical advice. Please check with your doctor before starting new exercises or if you have a health condition.\n\nMeet Nokomis June and the Grandma Squad: grandmothers from every corner of the world sharing recipes, health tips and gentle exercises every day.\n\n#SeniorFitness #ChairExercise #HealthyAging #GrandmaSquad #GrandmaWisdom #Shorts",
+      "tags": [
+        "chair exercise",
+        "balance",
+        "circulation",
+        "knee lift",
+        "older adults",
+        "Nokomis June",
+        "Ojibwe",
+        "Indigenous",
+        "exercise for seniors",
+        "health tips"
+      ],
+      "caption": "Stay strong and steady with Nokomis' knee lift exercise! 🏋️💪\n\n#SeniorFitness #ChairExercise #HealthyAging #GrandmaSquad #GrandmaWisdom #Shorts",
+      "video_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-30/slot3.mp4?v=1793410942",
+      "poster_url": "https://github.com/grandma-squad/grandma-squad/releases/download/v-2026-10-30/slot3.jpg?v=1793410942",
+      "video_file": "slot3.mp4",
+      "poster_file": "slot3.jpg",
+      "duration": 59.9,
+      "youtube": {},
+      "instagram": {}
     }
   ]
 }
