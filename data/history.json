@@ -115,5 +115,14 @@
     "fact": "Regular chair exercises can improve balance and circulation in older adults.",
     "activity": "her porch with a sturdy chair",
     "topic_type": "EXERCISE"
+  },
+  {
+    "date": "2026-10-30",
+    "slot": 1,
+    "grandma": "mama-wanjiru",
+    "title": "Mama's Sukuma Wiki 🌿",
+    "fact": "Sukuma Wiki is a traditional Kenyan stew made with collard greens and rich in fibre.",
+    "activity": "her home kitchen full of cultural details",
+    "topic_type": "RECIPE"
   }
 ]
